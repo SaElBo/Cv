@@ -1,0 +1,56 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --main-color: #FED233;
+}
+
+body {
+  
+    font-family: 'Poppins', sans-serif;
+}
+
+.bg-main {
+    background-color: var(--main-color);
+}
+
+.minh-50{
+    min-height: 50vh ;
+}
+
+.t-bold{
+    font-weight: 700;
+}
+
+.t-secondary{
+      font-family: 'Hind Siliguri', sans-serif;
+}
+
+.t-ter{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 1.5rem;
+}
+
+.btn-shade{
+    background-color: #ffffff;
+    padding: 1rem 3rem; 
+  
+    border-radius: 10px;
+}
+
+.bg-black{
+    
+    background-color: black;
+}
+
+.absolute{
+    position: absolute;
+    left:50%;
+    top: 50%;
+    transform: translate(-50%,0);
+    height: 600px;
+    width: 1000px;
+}
