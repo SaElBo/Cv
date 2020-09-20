@@ -54,3 +54,16 @@ body {
     height: 600px;
     width: 1000px;
 }
+
+.img-rounded-border{
+    border-radius: 10px;
+}
+
+.b-w{
+    filter: grayscale(1);
+
+}
+
+h2 span {
+    color: var(--main-color);
+}
