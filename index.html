@@ -30,8 +30,8 @@
   <body>
     <div class="container-fluid bg-main pb-lg-2">
       <div class="container">
-        <nav class="navbar navbar-expand-lg navbar-light">
-          <a class="navbar-brand ml-5" href="#">Salvatore Boukaleb</a>
+        <nav class="navbar navbar-expand-lg navbar-light d-none d-md-flex">
+          <a class="navbar-brand" href="#">Salvatore Boukaleb</a>
           <button
             class="navbar-toggler"
             type="button"
@@ -61,7 +61,7 @@
       <div class="container">
         <div class="row">
           <div class="col-12 text-lg-center">
-            <h1 class="display-4 t-bold text-uppercase">Salvatore Boukaleb</h1>
+            <h1 class=" t-bold text-uppercase">Salvatore Boukaleb</h1>
             <h2 class="display-5 pt-3 t-secondary">full stack web dev</h2>
             <p class="t-ter mt-5 w-50 mx-auto text-left text-lg-center">
               Lorem ipsum, dolor sit amet consectetur adipisicing elit.
@@ -89,7 +89,7 @@
       </svg>
     </div>
 
-    <section id="Projects">
+    <section id="Projects" style='overflow-x: hidden;'>
       <div class="container-fluid bg-black minh-50 pt-5">
         <div class="container">
           <div class="row py-5">
@@ -100,11 +100,23 @@
           <!-- first -->
           <div class="row my-5" data-aos="fade-right" data-aos-duration="3000">
             <div class="col-12 col-lg-6 text-center my-5 my-lg-0 text-lg-left">
-              <img
-                src="https://picsum.photos/300"
-                alt="project-1"
-                class="img-fluid img-rounded-border"
-              />
+              <div class="row align-items-center justify-content-start visible">
+                
+                <div class="col-7 img">
+                  <img
+                    src="https://picsum.photos/301"
+                    alt="project-1"
+                    class="img-fluid rounded-border"
+                  />
+                </div>
+                <div class="col-3 ml-3 text-left">
+                  <div class="link ">
+                      <a href="" class="d-iline btn btn-warning  my-2">Live Demo</a>
+                  <a href="" class="btn btn-warning btn-lg my-2">Code</a>
+                  </div>
+                
+                </div>
+              </div>
             </div>
             <div class="col-12 col-lg-6 my-auto">
               <h2 class="text-white display-5 mb-4">Project 1</h2>
@@ -116,16 +128,27 @@
             </div>
           </div>
           <!-- Second -->
-          <div class="row myt-5" data-aos="fade-left" data-aos-duration="3000">
+          <div class="row my-5" data-aos="fade-left" data-aos-duration="3000">
             <div class="col-12 col-lg-6 text-center my-5 my-lg-0 text-lg-right">
-              <img
-                src="https://picsum.photos/301"
-                alt="project-1"
-                class="img-fluid img-rounded-border"
-              />
+              <div class="row align-items-center justify-content-end visible">
+                <div class="col-3 mr-3 mr-xm-4 text-right">
+                  <div class="link ">
+                      <a href="" class="d-iline btn btn-warning  my-2">Live Demo</a>
+                  <a href="" class="btn btn-warning btn-lg my-2">Code</a>
+                  </div>
+                
+                </div>
+                <div class="col-7 img">
+                  <img
+                    src="https://picsum.photos/301"
+                    alt="project-1"
+                    class="img-fluid rounded-border"
+                  />
+                </div>
+              </div>
             </div>
-            <div class="col-12 col-lg-6 my-auto order-lg-first">
-              <h2 class="text-white display-5 mb-4">Project 1</h2>
+            <div class="col-12 col-lg-6 my-auto order-lg-first ">
+              <h2 class="text-white display-5 mb-4">Project 2</h2>
               <p class="lead text-white">
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit.
                 Temporibus nesciunt delectus eligendi tempora adipisci velit
@@ -136,14 +159,26 @@
           <!-- Third -->
           <div class="row pb-5" data-aos="fade-right" data-aos-duration="3000">
             <div class="col-12 col-lg-6 text-center my-5 my-lg-0 text-lg-left">
-              <img
-                src="https://picsum.photos/300"
-                alt="project-1"
-                class="img-fluid rounded-border"
-              />
+              <div class="row align-items-center justify-content-start visible">
+                
+                <div class="col-7 img">
+                  <img
+                    src="https://picsum.photos/301"
+                    alt="project-1"
+                    class="img-fluid rounded-border"
+                  />
+                </div>
+                <div class="col-3 ml-3 text-left">
+                  <div class="link ">
+                      <a href="" class="d-iline btn btn-warning  my-lg-2">Live Demo</a>
+                  <a href="" class="btn btn-warning btn-lg my-2">Code</a>
+                  </div>
+                
+                </div>
+              </div>
             </div>
             <div class="col-12 col-lg-6 my-auto">
-              <h2 class="text-white display-5 mb-4">Project 1</h2>
+              <h2 class="text-white display-5 mb-4">Project 3</h2>
               <p class="lead text-white">
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit.
                 Temporibus nesciunt delectus eligendi tempora adipisci velit
@@ -160,7 +195,7 @@
         <div class="container">
           <div class="row">
             <div
-              class="col-12 text-center text-white rel"
+              class="col-12 text-center text-white rel ml-lg-5 md-lg-5"
               data-aos-duration="3000"
               data-aos="fade-up"
             >
@@ -182,23 +217,30 @@
     </section>
 
     <section id="contattami">
-      <div class="container-fluid bg-black  py-5 ">
-        <div class="container bg-accent rounded-border box">
+      <div class="container-fluid bg-black py-5">
+        <div class="container bg-tertiary rounded-border box">
           <div class="row">
             <div class="col-12 col-lg-6">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint
               ipsum ipsa et fuga reprehenderit incidunt accusamus nesciunt
               molestias aspernatur saepe fugit numquam velit odio doloribus, ab
               repellat? Veritatis, repudiandae quisquam.
-
             </div>
-            <div class="col-12 col-lg-6 pt-4  ">
-                <div class="btn-8">
-                    <a href="#"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
-                    <a href="#"><i class="fa fa-twitter-square" aria-hidden="true"></i></a>
-                    <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-                    <a href="#"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a>
-                  </div>
+            <div class="col-12 col-lg-6 pt-4">
+              <div class="btn-8">
+                <a href="#"
+                  ><i class="fa fa-facebook-square" aria-hidden="true"></i
+                ></a>
+                <a href="#"
+                  ><i class="fa fa-twitter-square" aria-hidden="true"></i
+                ></a>
+                <a href="#"
+                  ><i class="fa fa-instagram" aria-hidden="true"></i
+                ></a>
+                <a href="#"
+                  ><i class="fab fa-linkedin-in" aria-hidden="true"></i
+                ></a>
+              </div>
             </div>
           </div>
         </div>
@@ -206,16 +248,14 @@
     </section>
 
     <!-- Footer -->
-<footer class="page-footer font-small bg-main ">
-
-    <!-- Copyright -->
-    <div class="footer-copyright text-center py-3">© 2020 Copyright:
-      Salvatore Boukaleb @aulab
-    </div>
-    <!-- Copyright -->
-  
-  </footer>
-  <!-- Footer -->
+    <footer class="page-footer font-small bg-main">
+      <!-- Copyright -->
+      <div class="footer-copyright text-center py-3">
+        © 2020 Copyright: Salvatore Boukaleb @aulab
+      </div>
+      <!-- Copyright -->
+    </footer>
+    <!-- Footer -->
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -234,7 +274,10 @@
       integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
       crossorigin="anonymous"
     ></script>
-    <script src="https://kit.fontawesome.com/85e1570e38.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/85e1570e38.js"
+      crossorigin="anonymous"
+    ></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
       AOS.init();

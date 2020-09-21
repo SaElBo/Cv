@@ -6,11 +6,16 @@
 
 :root {
     --main-color: #FED233;
-    --accent-color : #FF634D;
+    --accent-color : #27C93F;
+    --tertiary-color: #FF634D;
 }
 
 body {
     font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+}
+section{
+    overflow: hidden;
 }
 
 .bg-main {
@@ -47,6 +52,30 @@ body {
 .bg-accent{
     background-color: var(--accent-color);
 }
+
+.bg-tertiary{
+    background-color: var(--tertiary-color);
+}
+.project img:hover{
+    position: relative;
+    cursor: pointer;
+}
+.link{
+    display: none;
+}
+
+@media screen and (max-width:576px){
+    .link{
+        display: inline-block;
+    }
+}
+.visible:hover  div  .link{
+    display: inline-block;
+
+}
+
+
+
 .absolute {
     position: absolute;
     left: 50%;
@@ -176,7 +205,7 @@ h2 span {
         width: 2rem;
         padding: 1.5rem;
         margin: 0.5rem;
-        background-color: var(--main-color);
+        background-color: var(--tertiary-color);
         transition: .2s;
         text-decoration: none;
     }
