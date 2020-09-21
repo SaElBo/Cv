@@ -1,3 +1,5 @@
+/* Genereal Selector */
+
 * {
     margin: 0;
     padding: 0;
@@ -6,33 +8,25 @@
 
 :root {
     --main-color: #FED233;
-    --accent-color : #27C93F;
+    --accent-color: #27C93F;
     --tertiary-color: #FF634D;
 }
 
-::-moz-selection { 
+::-moz-selection {
     color: var(--main-color);
     background: var(--accent-color);
-  }
-  
-  ::selection {
-    color: var(--main-color);
-    background: var(--accent-color);
-  }
+}
 
-i{
+::selection {
+    color: var(--main-color);
+    background: var(--accent-color);
+}
+
+h2 span {
     color: var(--main-color);
 }
-i:hover{
-    color: var(--tertiary-color);
-}
-body {
-    font-family: 'Poppins', sans-serif;
-    overflow-x: hidden;
-}
-section{
-    overflow: hidden;
-}
+
+/* Utils */
 
 .bg-main {
     background-color: var(--main-color);
@@ -55,42 +49,40 @@ section{
     font-size: 1.5rem;
 }
 
+.bg-black {
+    background-color: black;
+}
+
+.bg-accent {
+    background-color: var(--accent-color);
+}
+
+.bg-tertiary {
+    background-color: var(--tertiary-color);
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+}
+
+section {
+    overflow: hidden;
+}
+
+.rel {
+    position: relative;
+}
+
+.box {
+    padding: 3rem;
+}
+
 .btn-shade {
     background-color: var(--accent-color);
     padding: 1rem 3rem;
     border-radius: 10px;
 }
-
-.bg-black {
-    background-color: black;
-}
-
-.bg-accent{
-    background-color: var(--accent-color);
-}
-
-.bg-tertiary{
-    background-color: var(--tertiary-color);
-}
-.project img:hover{
-    position: relative;
-    cursor: pointer;
-}
-.link{
-    display: none;
-}
-
-@media screen and (max-width:576px){
-    .link{
-        display: inline-block;
-    }
-}
-.visible:hover  div  .link{
-    display: inline-block;
-
-}
-
-
 
 .absolute {
     position: absolute;
@@ -105,12 +97,41 @@ section{
     border-radius: 10px;
 }
 
-h2 span {
+/* project section */
+
+section#Projects img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+}
+
+/* .project img:hover {
+    position: relative;
+    cursor: pointer;
+} */
+
+/* .link {
+    display: inline-block;
+} */
+
+/* @media screen and (max-width:576px) {
+    .link {
+        display: inline-block;
+    }
+}
+
+.visible:hover div .link {
+    display: inline-block;
+} */
+
+/* Skill section */
+
+section#skills i {
     color: var(--main-color);
 }
 
-.rel {
-    position: relative;
+section#skills i:hover {
+    color: var(--tertiary-color);
 }
 
 .speach-bubble {
@@ -137,16 +158,9 @@ h2 span {
         width: 100%;
         height: 100%;
     }
- 
 }
 
-.box{
-    padding: 3rem;
-}
-
-
-
-/* ottavo */
+/* Contact Botton */
 
 .btn-8 {
     padding: 1.2rem 2.7rem;
@@ -206,10 +220,8 @@ h2 span {
 
 @media screen and (max-width: 576px) {
     .btn-8::after {
-       display: none;
-
+        display: none;
     }
-
     .btn-8 a {
         opacity: 1;
         display: flex;
