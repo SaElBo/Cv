@@ -10,6 +10,22 @@
     --tertiary-color: #FF634D;
 }
 
+::-moz-selection { 
+    color: var(--main-color);
+    background: var(--accent-color);
+  }
+  
+  ::selection {
+    color: var(--main-color);
+    background: var(--accent-color);
+  }
+
+i{
+    color: var(--main-color);
+}
+i:hover{
+    color: var(--tertiary-color);
+}
 body {
     font-family: 'Poppins', sans-serif;
     overflow-x: hidden;
@@ -107,7 +123,7 @@ h2 span {
 
 .speach {
     position: absolute;
-    top: 20%;
+    top: 40%;
     left: 10%;
     z-index: 1;
     width: 50%;
