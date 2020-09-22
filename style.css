@@ -79,9 +79,15 @@ section {
 }
 
 .btn-shade {
-    background-color: var(--accent-color);
+    border:3px solid var(--accent-color);
     padding: 1rem 3rem;
     border-radius: 10px;
+    transition: .4s;
+}
+
+.btn-shade:hover{
+    transform: scale(1.2);
+    box-shadow: 10px 10px black;
 }
 
 .absolute {
